@@ -29,7 +29,7 @@ namespace SilentControl
 
     inline void switchToggle()
     {
-        MenuConfig::AimAlways = !MenuConfig::AimAlways;
+        MenuConfig::SilentAimAlways = !MenuConfig::SilentAimAlways;
     }
 
     inline void AimSilent(const CEntity& Local, Vec3 LocalPos, Vec3 AimPos)
@@ -52,7 +52,7 @@ namespace SilentControl
 
         Length = sqrt(Distance * Distance + OppPos.z * OppPos.z);
         // RCS by @Tairitsu
-        if (MenuConfig::RCS)
+        if (MenuConfig::SilentRCS)
         {
             RCS::GetAngles(Local, Angles);
             RCS::SetAngles(Local, Angles, true);
