@@ -64,4 +64,4 @@ Free and open-source external cheat for CS2, written in C++.
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=CowNowK/AimStar&type=Date)](https://star-history.com/#CowNowK/AimStar&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=lunarutku/AimStarPlusPlus&type=Date)](https://star-history.com/#CowNowK/AimStar&Date)
