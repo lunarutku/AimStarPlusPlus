@@ -13,24 +13,6 @@ namespace fs = std::filesystem;
 int main()
 {
 
-	std::printf(
-	"AimStar External for CS2\n"
-	"Author: CowNow\n"
-	"Source Code: https://github.com/CowNowK/AimStar\n"
-	"\n"
-	"- This features may result in VAC Bans, use at your own risk:\n"
-	"	* NoFlash\n"
-	"- Press [INS] to show or hide Menu.\n"
-	"\n"
-	"#Disclamers:\n"
-	"- Because AimStar has too many users, and there are many derivative cheats that are being sold or free. AimStar may now be detected\n"
-	"- Use at your own risk\n"
-	"\n"
-	"#Contributors: \n"
-	"Shinyaluvs, Nx0Ri, Skarbor, KeysIsCool, Kenny, Cr1ppl3, Tairitsu, tokinaa, faster_bbc, vsantos1, 5mmod, gScream, Hazetick, styx, user1232\n"
-	"\n"
-	);
-
 	auto ProcessStatus = ProcessMgr.Attach("cs2.exe");
 
 	char documentsPath[MAX_PATH];
@@ -39,7 +21,7 @@ int main()
 		goto END;
 	}
 	MenuConfig::path = documentsPath;
-	MenuConfig::path += "\\AimStar";
+	MenuConfig::path += "\\AimStar++";
 	MenuConfig::SoundPath = MenuConfig::path + "\\Sounds";
 
 	switch (ProcessStatus) {
@@ -47,7 +29,7 @@ int main()
 		std::cout << "[ERROR] Please launch the game first!" << std::endl;
 		goto END;
 	case 2: 
-		std::cout << "[ERROR] Failed to hook process, please run the cheat as Administrator (Right click AimStar > Run as Adminstrator)." << std::endl; 
+		std::cout << "[ERROR] Failed to hook process, please run the cheat as Administrator (Right click AimStar++ > Run as Adminstrator)." << std::endl; 
 		goto END; 
 	case 3:
 		std::cout << "[ERROR] Failed to get module address." << std::endl; 
@@ -118,7 +100,7 @@ int main()
 		try
 		{
 			// Perfect World version
-			Gui.AttachAnotherWindow("���־�Ӣ��ȫ����", "SDL_app", Cheats::Run);
+			Gui.AttachAnotherWindow("·´¿Ö¾«Ó¢£ºÈ«Çò¹¥ÊÆ", "SDL_app", Cheats::Run);
 		}
 		catch (OSImGui::OSException& e)
 		{
