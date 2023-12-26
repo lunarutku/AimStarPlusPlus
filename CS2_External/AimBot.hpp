@@ -105,6 +105,9 @@ namespace AimControl
             if (!Smooth)
             {
                 mouse_event(MOUSEEVENTF_MOVE, (DWORD)(TargetX), (DWORD)(TargetY), NULL, NULL);
+                mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+                mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+                mouse_event(MOUSEEVENTF_MOVE, static_cast<DWORD>(-TargetX), static_cast<DWORD>(-TargetY), NULL, NULL);
                 return;
             }
 
@@ -132,6 +135,9 @@ namespace AimControl
                 }
             }
             mouse_event(MOUSEEVENTF_MOVE, TargetX, TargetY, NULL, NULL);
+            mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+            mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+            mouse_event(MOUSEEVENTF_MOVE, -TargetX, -TargetY, 0, 0);
         }
     }
 }
