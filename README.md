@@ -1,3 +1,5 @@
+# THIS AIMSTAR FORK IS DISCONTINUED DUE MY BUSYNESS IRL
+
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/CowNowK/AimStarCS2/master/AS_Logo.png" alt="icon" style="width: 100px; height: 100px"><br>
   AimStar++
